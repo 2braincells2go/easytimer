@@ -17,61 +17,62 @@ To trigger the plugin to search for the elements, call the jQuery Method.
 
 ### Hide Until
 This means leave the element as display:none; from CSS until this date.
-
-  <div data-hide-until="2016-01-01">
-    <p>
-      Hidden content until January 1st, 2016
-    </p>
-  </div>
-
+```
+<div data-hide-until="2016-01-01">
+  <p>
+    Hidden content until January 1st, 2016
+  </p>
+</div>
+```
 ### Remove Until
 For more sensitive elements that can't be just hidden, you can also trigger a .remove(); (method which completely removes it from the DOM) on the element until a certain date.
-
-  <div data-remove-until="2016-01-01">
-    <p>
-      This content will completely self destruct on page load until January 1st, 2016, which it will then show.
-    </p>
-  </div>
-
+```
+<div data-remove-until="2016-01-01">
+  <p>
+    This content will completely self destruct on page load until January 1st, 2016, which it will then show.
+  </p>
+</div>
+```
 ### Show Until
 You could do the opposite method and specify for the element to show until a certain date too.
-
-  <div data-show-until="2016-01-01">
-    <p>
-      This content will display any time before January 1st, 2016. When that date comes it will hide.
-    </p>
-  </div>
-
+```
+<div data-show-until="2016-01-01">
+  <p>
+    This content will display any time before January 1st, 2016. When that date comes it will hide.
+  </p>
+</div>
+```
 ### Hide After
 In the opposite way of the above methods you can trigger in action after the date entered. (This is truly **on** and after). This one will hide on and after a certain date.
-
-  <div data-hide-after="2016-01-01">
-    <p>
-      This content will appear any time before January 1st, 2016. It will hide on and after January 1st, 2016.
-    </p>
-  </div>
-
+```
+<div data-hide-after="2016-01-01">
+  <p>
+    This content will appear any time before January 1st, 2016. It will hide on and after January 1st, 2016.
+  </p>
+</div>
+```
 ### Remove After
 This method will remove on and after a certain date.
-
-  <div data-remove-after="2016-01-01">
-    <p>
-      This content will appear any time before January 1st, 2016. It will remove from DOM on and after January 1st, 2016.
-    </p>
-  </div>
-
+```
+<div data-remove-after="2016-01-01">
+  <p>
+    This content will appear any time before January 1st, 2016. It will remove from DOM on and after January 1st, 2016.
+  </p>
+</div>
+```
 ### Show After
 This method will only show content on and after a certain date.
-
-  <div data-show-after="2016-01-01">
-    <p>
-      This content will be hidden any time before January 1st, 2016. It will show on and after January 1st, 2016.
-    </p>
-  </div>
-
+```
+<div data-show-after="2016-01-01">
+  <p>
+    This content will be hidden any time before January 1st, 2016. It will show on and after January 1st, 2016.
+  </p>
+</div>
+```
 ## futureDate() Boolean Test Function
 This is a boolean test you can run against the plugin. Simply will return true or false of whether a date has arrived (**true**) , or has not arrived yet (**false**)
-
-  if (futureDate("2016-01-01")) {
-    alert ("Happy New year!");
-  }
+```
+if (futureDate("2016-01-01")) {
+  alert ("Happy New year!");
+}
+```
